@@ -1,0 +1,25 @@
+{
+  "name": "randompasswordgenerator",
+  "version": "1.0.0",
+  "description": "a solo project to generate a random password",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxthor500/RandomPasswordGenerator.git"
+  },
+  "keywords": [
+    "password",
+    "generator",
+    "random"
+  ],
+  "author": "Carmine Pastena",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maxthor500/RandomPasswordGenerator/issues"
+  },
+  "homepage": "https://github.com/maxthor500/RandomPasswordGenerator#readme"
+}
