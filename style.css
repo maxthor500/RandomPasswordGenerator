@@ -21,13 +21,41 @@ body.dark-mode {
     color: #FFFFFF;
 }
 
+/* Navbar */
+#nav {
+    display: flex;
+    width: 100vw;
+    height: 2rem;
+    justify-content:end;
+}
+
+#toggle-btn {
+    font-weight: bold;
+    font-size: 1.3rem;
+    background: transparent;
+    border: none;
+    color: #10B981;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+#toggle-btn.dark-mode {
+    color: #4ADF86;
+}
+
+i {
+    padding: .8rem;
+}
+
+/* heading style */
 h1 {
-    padding: 2rem;
+    padding-top: 2rem;
     font-family: 'Karla';
     font-style: normal;
     font-weight: 800;
     font-size: 2em;
-    line-height: 2em;
+    text-align: center;
+    line-height: 1em;
     letter-spacing: -0.025em;
 }
 
@@ -35,7 +63,17 @@ h1 {
     color: #10B981;
 }
 
-.dark-green {
+span.dark-mode {
     color: #4ADF86;
 }
 
+p {
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 2em;
+    color: #6B7280;
+}
+
+#para-1.dark-mode{
+    color: #D5D4D8;
+}
