@@ -24,5 +24,5 @@ Also if I am intermediate level, am following this course to improve my skills a
 
 The design is provided from the course on Figma.
 
-![Design](./images/pass_generator.jpg)
+![Design](./src/assets/images/pass_generator.jpg)
 

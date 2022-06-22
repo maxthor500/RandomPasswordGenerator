@@ -1,8 +1,10 @@
+import renderHeading from "./heading";
+import "./styles/style.css"
+
 // initial variables
 const root = document.getElementById("root");
 const body = document.querySelector("body");
-let textFirstParagraph = "Never use an insecure password again.";
-
+let textFirstParagraph = "Never use an insecure password again.";s
 
 // help functions
 const darkMode = (arr) => {
@@ -24,17 +26,6 @@ const renderNav = () => {
     i.classList.add("fa-circle-half-stroke");
     nav.appendChild(toggleBtn);
     toggleBtn.appendChild(i);
-}
-
-const renderHeading = () => {
-    const h1 = document.createElement("h1");
-    const span = document.createElement("span");
-    h1.innerText = "Generate a ";
-    span.innerText = "random password";
-    span.classList.add("green");
-    span.id = "span";
-    root.appendChild(h1);
-    h1.appendChild(span);
 }
 
 const renderParagraph = (text, id) => {
