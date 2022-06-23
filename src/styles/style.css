@@ -99,4 +99,27 @@ p {
     color: #ffffff;
     border: none;
     border-radius: .5rem;
+    cursor: pointer;
 }
+
+#generate-btn.dark-mode {
+    background: #4ADF86;
+}
+
+hr {
+    max-width: 25rem;
+    background-color: #2F3e53;
+    margin: auto;
+}
+
+#passwords {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+    padding: 2rem;
+}
+
+/* #password-1, #password-2 {
+    background: #273549;
+    border-radius: .5rem;
+} */

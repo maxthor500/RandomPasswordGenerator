@@ -25,4 +25,4 @@ const renderHeading = () => {
     renderParagraph(div, textFirstParagraph, 1);
 }
 
-export default renderHeading;
+export { renderHeading, renderParagraph};
