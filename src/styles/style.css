@@ -76,7 +76,6 @@ span.dark-mode {
 
 p {
     grid-column: 2;
-
     font-size: 1em;
     line-height: 2em;
     color: #6B7280;
@@ -114,12 +113,27 @@ hr {
 
 #passwords {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content:center;
     margin-top: 1rem;
     padding: 2rem;
 }
 
-/* #password-1, #password-2 {
-    background: #273549;
+#para-password-1, #para-password-2 {
+    min-width: 12rem;
+    height: 3rem;
+    margin: 1rem 2rem;
+    background-color: #273549;
+    font-size: 1.2rem;
+    line-height: 2.8rem;
     border-radius: .5rem;
-} */
+    text-align: center;
+    color:#5DEF92;
+    ;
+}
+
+@media (min-width: 65rem) {
+    hr {
+        max-width: 100%;
+    }
+}

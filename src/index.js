@@ -26,8 +26,8 @@ const div = document.createElement("div");
 root.appendChild(div);
 div.id = "passwords";
 
-renderParagraph(div, "Hello", "password-1");
-renderParagraph(div, "World", "password-2");
+renderParagraph(div, "", "password-1");
+renderParagraph(div, "", "password-2");
 
 // get element after the render
 const toggleBtn = document.getElementById("toggle-btn");
@@ -43,6 +43,12 @@ toggleBtn.addEventListener("click", (e) => {
     e.preventDefault();
 })
 
-generateBtn.addEventListener("click", () => generatePassword(16, true));
+const paraPass1 = document.getElementById("para-password-1");
+const paraPass2 = document.getElementById("para-password-2");
+
+generateBtn.addEventListener("click", () => {
+    generatePassword(paraPass1, 16, true);
+    generatePassword(paraPass2, 16, true);
+});
 
 

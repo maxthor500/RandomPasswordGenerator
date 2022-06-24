@@ -9,7 +9,7 @@ export const renderBtn = () => {
 };
 
 
-export const generatePassword = (lengthPassword, hasSymbols) => {
+export const generatePassword = (paragraph, lengthPassword, hasSymbols) => {
         const characters = [
             "A","B","C","D","E",
             "F","G","H","I","J",
@@ -37,5 +37,5 @@ export const generatePassword = (lengthPassword, hasSymbols) => {
                         * characters.length);
             password += characters[char];
         }
-        console.log(password);
+        paragraph.textContent = password;
 }
