@@ -51,10 +51,12 @@ i {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     width: 100vw;
+    justify-items: center;
 }
 
 h1 {
-    width: 300px;
+    width: 18.75rem;
+    margin: 0 1rem;
     grid-column: 2;
     padding-top: 2rem;
     font-family: 'Karla';
@@ -75,6 +77,7 @@ span.dark-mode {
 }
 
 p {
+    width: 18.75rem;
     grid-column: 2;
     font-size: 1em;
     line-height: 2em;
@@ -107,7 +110,7 @@ p {
 
 hr {
     max-width: 25rem;
-    background-color: #2F3e53;
+    border: 1px solid #2F3e53;
     margin: auto;
 }
 
@@ -115,14 +118,13 @@ hr {
     display: flex;
     flex-wrap: wrap;
     justify-content:center;
-    margin-top: 1rem;
     padding: 2rem;
 }
 
 #para-password-1, #para-password-2 {
     min-width: 12rem;
     height: 3rem;
-    margin: 1rem 2rem;
+    margin: .5rem 2rem;
     background-color: #273549;
     font-size: 1.2rem;
     line-height: 2.8rem;
@@ -132,8 +134,24 @@ hr {
     ;
 }
 
+#input {
+    display: flex;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    color: #6B7280;
+}
+
+input[type=checkbox] {
+    height: 1.2rem;
+    width: 1.2rem;
+    margin: .5rem;
+}
+
+
+
 @media (min-width: 65rem) {
     hr {
-        max-width: 100%;
+        max-width: 50%;
     }
 }

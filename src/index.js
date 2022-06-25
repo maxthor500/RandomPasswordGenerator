@@ -2,6 +2,7 @@ import { renderHeading, renderParagraph } from "./Heading";
 import renderNav from "./Navbar";
 import { renderBtn, generatePassword } from "./Button";
 import "./styles/style.css";
+import { hasSymbols, renderCheckbox } from "./Inputs";
 
 // initial variables
 const root = document.getElementById("root");
@@ -21,6 +22,8 @@ renderBtn();
 
 const hr = document.createElement("hr");
 root.appendChild(hr);
+
+renderCheckbox();
 
 const div = document.createElement("div");
 root.appendChild(div);
@@ -47,8 +50,8 @@ const paraPass1 = document.getElementById("para-password-1");
 const paraPass2 = document.getElementById("para-password-2");
 
 generateBtn.addEventListener("click", () => {
-    generatePassword(paraPass1, 16, true);
-    generatePassword(paraPass2, 16, true);
+    generatePassword(paraPass1, 16, hasSymbols());
+    generatePassword(paraPass2, 16, hasSymbols());
 });
 
 

@@ -31,10 +31,17 @@ export const generatePassword = (paragraph, lengthPassword, hasSymbols) => {
               ";","<",">",".","?","/"
             ];
         let password = "";
+        
+        let charactersLength = characters.length;
+        const symbols = 29;
+        
+        if (!hasSymbols) {
+            charactersLength -= symbols;
+        }
 
         for (let i = 0; i < lengthPassword; i++) {
             let char = Math.floor(Math.random()
-                        * characters.length);
+                        * charactersLength);
             password += characters[char];
         }
         paragraph.textContent = password;
