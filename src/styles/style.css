@@ -162,6 +162,10 @@ input[type=number] {
     text-align: center;
 }
 
+#para-copied {
+    width: 100%;
+}
+
 
 @media (min-width: 65rem) {
     hr {
