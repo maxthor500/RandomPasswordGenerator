@@ -19,12 +19,13 @@ const darkMode = (arr) => {
 renderNav();
 renderHeading();
 renderBtn();
+renderCheckbox();
 
+// render hr below the checkbox
 const hr = document.createElement("hr");
 root.appendChild(hr);
 
-renderCheckbox();
-
+// render a div that contains 2 password results
 const div = document.createElement("div");
 root.appendChild(div);
 div.id = "passwords";
@@ -37,6 +38,8 @@ const toggleBtn = document.getElementById("toggle-btn");
 const generateBtn = document.getElementById("generate-btn");
 const span = document.getElementById("span");
 const para1 = document.getElementById("para-1");
+const paraPass1 = document.getElementById("para-password-1");
+const paraPass2 = document.getElementById("para-password-2");
 
 // events after the page is load
 toggleBtn.addEventListener("click", (e) => {
@@ -44,14 +47,11 @@ toggleBtn.addEventListener("click", (e) => {
         root, body, toggleBtn, span, para1, generateBtn];
     darkMode(darkModeElements);
     e.preventDefault();
-})
-
-const paraPass1 = document.getElementById("para-password-1");
-const paraPass2 = document.getElementById("para-password-2");
+});
 
 generateBtn.addEventListener("click", () => {
-    generatePassword(paraPass1, 16, hasSymbols());
-    generatePassword(paraPass2, 16, hasSymbols());
+    generatePassword(paraPass1, hasSymbols());
+    generatePassword(paraPass2, hasSymbols());
 });
 
 

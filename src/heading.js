@@ -1,13 +1,5 @@
 let textFirstParagraph = "Never use an insecure password again.";
 
-const renderParagraph = (div, text, id) => {
-    const p = document.createElement("p");
-    const node = document.createTextNode(text)
-    p.appendChild(node);
-    p.id = `para-${id}`;
-    div.appendChild(p);
-}
-
 const renderHeading = () => {
     const div = document.createElement("div");
     const h1 = document.createElement("h1");
@@ -23,6 +15,14 @@ const renderHeading = () => {
     h1.appendChild(span);
     root.appendChild(div);
     renderParagraph(div, textFirstParagraph, 1);
+}
+
+const renderParagraph = (div, text, id) => {
+    const p = document.createElement("p");
+    const node = document.createTextNode(text)
+    p.appendChild(node);
+    p.id = `para-${id}`;
+    div.appendChild(p);
 }
 
 export { renderHeading, renderParagraph};

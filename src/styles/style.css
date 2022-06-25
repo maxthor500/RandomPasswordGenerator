@@ -136,6 +136,7 @@ hr {
 
 #input {
     display: flex;
+    flex-wrap: wrap;
     height: 3rem;
     justify-content: center;
     align-items: center;
@@ -148,6 +149,14 @@ input[type=checkbox] {
     margin: .5rem;
 }
 
+input[type=number] {
+    width: 2.8rem;
+    margin: .5rem;
+}
+
+#para-info {
+    color: #ff0000;
+}
 
 
 @media (min-width: 65rem) {

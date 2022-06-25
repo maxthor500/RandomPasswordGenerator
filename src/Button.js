@@ -1,3 +1,5 @@
+import { getLength } from "./Inputs";
+
 export const renderBtn = () => {
     const button = document.createElement("button");
     const div = document.createElement("div");
@@ -8,8 +10,7 @@ export const renderBtn = () => {
     button.textContent = "Generate Password";
 };
 
-
-export const generatePassword = (paragraph, lengthPassword, hasSymbols) => {
+export const generatePassword = (paragraph, hasSymbols) => {
         const characters = [
             "A","B","C","D","E",
             "F","G","H","I","J",
@@ -30,6 +31,9 @@ export const generatePassword = (paragraph, lengthPassword, hasSymbols) => {
               "}","]",",","|",":",
               ";","<",">",".","?","/"
             ];
+
+        const lengthPassword = getLength();
+
         let password = "";
         
         let charactersLength = characters.length;
