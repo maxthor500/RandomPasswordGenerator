@@ -26,3 +26,7 @@ The design is provided from the course on Figma.
 
 ![Design](./src/assets/images/pass_generator.jpg)
 
+
+## Furure Feautures
+
+- refactoring functions to class, to be more ripetitive and orderly
