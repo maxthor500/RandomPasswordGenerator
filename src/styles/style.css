@@ -117,7 +117,7 @@ hr {
 #passwords {
     display: flex;
     flex-wrap: wrap;
-    justify-content:center;
+    justify-content: center;
     padding: 2rem;
 }
 
@@ -131,7 +131,10 @@ hr {
     border-radius: .5rem;
     text-align: center;
     color:#5DEF92;
-    ;
+}
+
+#para-password-1:hover, #para-password-2:hover {
+    cursor: copy;
 }
 
 #input {
@@ -154,8 +157,9 @@ input[type=number] {
     margin: .5rem;
 }
 
-#para-info {
+#para-info, #para-copied {
     color: #ff0000;
+    text-align: center;
 }
 
 

@@ -71,9 +71,35 @@ const getLength = () => {
             return () => {lengthValue = passwordLength.valueAsNumber};
         }
     });
-
     return lengthValue;
 }
 
+// load getLength when the page's state is ready
+document.addEventListener('readystatechange', () => {
+    getLength();
+});
 
-export { renderCheckbox, hasSymbols, getLength };
+const copyOnClick = (div, element) => {
+  
+    element.addEventListener("click", (e) => {
+        e.preventDefault();
+        let textToCopy = element.textContent;
+
+        const copied = document.getElementById("para-copied");
+        if (copied) {
+            copied.remove();
+        }
+        
+        if((navigator.clipboard) && (textToCopy)) {
+            navigator.clipboard.writeText(textToCopy).then(() => {
+                renderParagraph(div, "Password copied!", "copied");
+            });
+        } else if (!textToCopy) {
+            renderParagraph(div, "Nothing to copy!", "copied");
+        } else {
+            renderParagraph(div, "Browser Not compatible");
+        }
+    });
+}
+
+export { renderCheckbox, hasSymbols, getLength, copyOnClick };

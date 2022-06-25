@@ -31,9 +31,17 @@ export const generatePassword = (paragraph, hasSymbols) => {
               "}","]",",","|",":",
               ";","<",">",".","?","/"
             ];
+        
+        let lengthPassword = getLength();
+        if ((lengthPassword < 8) || (lengthPassword > 20)) {
+            lengthPassword = 0
+        }
 
-        const lengthPassword = getLength();
-
+        const copied = document.getElementById("para-copied");
+        if (copied) {
+            copied.remove();
+        }
+        
         let password = "";
         
         let charactersLength = characters.length;

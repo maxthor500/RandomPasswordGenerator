@@ -2,7 +2,7 @@ import { renderHeading, renderParagraph } from "./Heading";
 import renderNav from "./Navbar";
 import { renderBtn, generatePassword } from "./Button";
 import "./styles/style.css";
-import { hasSymbols, renderCheckbox } from "./Inputs";
+import { copyOnClick, hasSymbols, renderCheckbox } from "./Inputs";
 
 // initial variables
 const root = document.getElementById("root");
@@ -38,6 +38,7 @@ const toggleBtn = document.getElementById("toggle-btn");
 const generateBtn = document.getElementById("generate-btn");
 const span = document.getElementById("span");
 const para1 = document.getElementById("para-1");
+const passwords = document.getElementById("passwords");
 const paraPass1 = document.getElementById("para-password-1");
 const paraPass2 = document.getElementById("para-password-2");
 
@@ -54,4 +55,5 @@ generateBtn.addEventListener("click", () => {
     generatePassword(paraPass2, hasSymbols());
 });
 
-
+copyOnClick(passwords, paraPass1);
+copyOnClick(passwords, paraPass2);
