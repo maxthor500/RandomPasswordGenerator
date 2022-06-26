@@ -5,7 +5,7 @@ This Solo project is from a [Scrimba](https://scrimba.com/) course.
 [Learn Javascript for free](https://scrimba.com/learn/learnjavascript):
 - For beginner
 - Interactive
-- a lot of codice challanges
+- a lot of code challenges
 
 Also if I am intermediate level, am following this course to improve my skills and practice at least one hour per day, relaxing after work.
 
@@ -27,6 +27,6 @@ The design is provided from the course on Figma.
 ![Design](./src/assets/images/pass_generator.jpg)
 
 
-## Furure Feautures
+## Future Features
 
-- refactoring functions to class, to be more ripetitive and orderly
+- refactoring functions to class, to be more repetitive and orderly
